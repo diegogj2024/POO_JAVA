@@ -4,17 +4,24 @@
  */
 package principal;
 
-/**
- *
- * @author SENA
- */
+import java.util.Scanner;
 public class Principal {
 
-    /**
-     * @param args the command line arguments
-     */
+ public static Scanner objscanner=new Scanner(System.in);
+ public static String nombre=" ";
+ public static int edad=0;
+ public static int cedula=0;
+ 
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("ingrese su nombre porfavor");
+        nombre=objscanner.nextLine();
+        System.out.println("ingrese su edad");
+        edad=objscanner.nextInt();
+        System.out.println("ingrese su cedula sin puntos o comas porfavor");
+        cedula=objscanner.nextInt();
+        Persona objPersona=new Persona(nombre,edad,cedula);
+        objPersona.Reservar();
+        objPersona.imprimirdatos();
     }
     
 }
