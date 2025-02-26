@@ -11,17 +11,21 @@ public class Principal {
  public static String nombre=" ";
  public static int edad=0;
  public static int cedula=0;
+ public static String correo;
  
     public static void main(String[] args) {
         System.out.println("ingrese su nombre porfavor");
-        nombre=objscanner.nextLine();
+        Principal.nombre=objscanner.nextLine();
         System.out.println("ingrese su edad");
-        edad=objscanner.nextInt();
+        Principal.edad=objscanner.nextInt();
         System.out.println("ingrese su cedula sin puntos o comas porfavor");
-        cedula=objscanner.nextInt();
-        Persona objPersona=new Persona(nombre,edad,cedula);
-        objPersona.Reservar();
-        objPersona.imprimirdatos();
+        Principal.cedula=objscanner.nextInt();
+        System.out.println("ingrese su correo electronico");
+        objscanner.nextLine();
+        Principal.correo=objscanner.nextLine();
+        Usuario objusuario=new Usuario(Principal.nombre,Principal.edad,Principal.cedula,Principal.correo);
+        objusuario.Reservar();
+        objusuario.imprimir();
     }
     
 }

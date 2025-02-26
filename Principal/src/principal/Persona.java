@@ -1,4 +1,4 @@
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Persona {
 
     public  static Scanner objscanner=new Scanner(System.in);
-    private static String nombre;
-    private static int edad;
-    private static int cedula;
+    public static String nombre;
+    public static int edad;
+    public static int cedula;
     public static String controlador=" ";
     public static int silla=1;
     
