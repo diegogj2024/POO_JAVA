@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package principal;
-
+import java.util.Random;
 import java.util.Scanner;
 
 public class Persona {
@@ -14,6 +14,9 @@ public class Persona {
     public static int cedula;
     public static String controlador=" ";
     public static int silla=1;
+    public static Random random=new Random();
+    public int asignarsala;
+    public static String pelicula;
     
     public Persona(String nombre,int edad,int cedula){
     Persona.nombre=nombre;
@@ -21,9 +24,24 @@ public class Persona {
     Persona.cedula=cedula;
     }
     
-    public void Reservar() {
+    public void Reservar(){
         String respuesta=" ";
         int control=1;
+        asignarsala=random.nextInt(4)+1;
+        switch (asignarsala) {
+            case 1:
+                Persona.pelicula="SONIC 3";
+                break;
+            case 2:
+                Persona.pelicula="MUFASA";
+                break;
+            case 3:
+                Persona.pelicula="READY PLAYER ONE";
+                break;
+            case 4:
+                Persona.pelicula="OPENJAIME";
+                break;
+        }
 
         while (!Persona.controlador.equals("NO") && !Persona.controlador.equals("SI")) {
             System.out.println("Desea reservar un asiento (Si, No)");
@@ -40,6 +58,7 @@ public class Persona {
                   System.out.println("ERROR, ingresaste un numero fuera del rango de 1 a 20.... intenta de nuevo");
                 }else {
                   control=0;
+                  Sala objsala=new Sala(asignarsala,pelicula);
                 }
                 }
             }
