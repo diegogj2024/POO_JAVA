@@ -12,6 +12,7 @@ public class Sala {
     public Sala(int sala,String pelicula){
         Sala.numerosala=sala;
         Sala.pelicula=pelicula;
+        System.out.println("Datos Reserva!!");
         System.out.println("numero de sala:"+sala);
         System.out.println("Pelicula:"+pelicula);
     }

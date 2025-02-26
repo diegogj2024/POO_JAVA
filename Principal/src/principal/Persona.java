@@ -17,6 +17,7 @@ public class Persona {
     public static Random random=new Random();
     public int asignarsala;
     public static String pelicula;
+    public static String correo;
     
     public Persona(String nombre,int edad,int cedula){
     Persona.nombre=nombre;
@@ -24,10 +25,11 @@ public class Persona {
     Persona.cedula=cedula;
     }
     
-    public void Reservar(){
+    public void Reservar(String correo){
         String respuesta=" ";
         int control=1;
-        asignarsala=random.nextInt(4)+1;
+        Persona.correo=correo;
+        this.asignarsala=random.nextInt(4)+1;
         switch (asignarsala) {
             case 1:
                 Persona.pelicula="SONIC 3";
@@ -58,7 +60,9 @@ public class Persona {
                   System.out.println("ERROR, ingresaste un numero fuera del rango de 1 a 20.... intenta de nuevo");
                 }else {
                   control=0;
+                  Asientos objAsientos=new Asientos(silla, nombre);
                   Sala objsala=new Sala(asignarsala,pelicula);
+                  Cine objcine=new Cine(Persona.nombre,Persona.edad,Persona.cedula,Persona.correo,Persona.silla,this.asignarsala,Persona.pelicula);
                 }
                 }
             }

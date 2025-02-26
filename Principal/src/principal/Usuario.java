@@ -12,7 +12,7 @@ public class Usuario extends Persona{
         Usuario.correo=correo;
     }
     public void imprimir(){
-        System.out.println("USUARIO");
+        System.out.println(" DATOS DEL USUARIO");
         System.out.println("nombre del usuario:"+nombre);
         System.out.println("edad del usuario:"+edad);
         System.out.println("cedula del usuario:"+cedula);
