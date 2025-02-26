@@ -69,10 +69,12 @@ public class Persona {
         }
     }
     
-    public void imprimirdatos(){
-        System.out.println("nombre del cliente:"+Persona.nombre);
+    public void imprimirdatos(String correo){
+        System.out.println("DATOS DEL USUARIO");
+        System.out.println("nombre :"+Persona.nombre);
         System.out.println("edad:"+Persona.edad);
         System.out.println("cedula:"+Persona.cedula);
+        System.out.println("correo electronico: "+correo);
         System.out.println("Reservo?:"+Persona.controlador);
         System.out.println("silla elegida:"+Persona.silla);
     }

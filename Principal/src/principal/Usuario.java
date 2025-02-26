@@ -11,12 +11,5 @@ public class Usuario extends Persona{
         super(nombre, edad, cedula);
         Usuario.correo=correo;
     }
-    public void imprimir(){
-        System.out.println(" DATOS DEL USUARIO");
-        System.out.println("nombre del usuario:"+nombre);
-        System.out.println("edad del usuario:"+edad);
-        System.out.println("cedula del usuario:"+cedula);
-        System.out.println("correo del usuario:"+Usuario.correo);
-    }
 }
 

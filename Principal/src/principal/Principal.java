@@ -25,7 +25,7 @@ public class Principal {
         Principal.correo=objscanner.nextLine();
         Usuario objusuario=new Usuario(Principal.nombre,Principal.edad,Principal.cedula,Principal.correo);
         objusuario.Reservar(Principal.correo);
-        objusuario.imprimir();
+        objusuario.imprimirdatos(Principal.correo);
     }
     
 }

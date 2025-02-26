@@ -25,6 +25,6 @@ public class Cine {
         Cine.asientoocupado=asientoocupado;
         Cine.sala=sala;
         Cine.pelicula=pelicula;
-        System.out.println("datos guardados");
+        System.out.println("los datos han sido guardados");
     }
 }
