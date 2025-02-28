@@ -4,7 +4,6 @@
  */
 package sensordemovimiento;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Sensordemovimiento {
     public static Random random = new Random();
