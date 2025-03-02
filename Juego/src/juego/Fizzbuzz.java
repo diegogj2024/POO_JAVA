@@ -4,19 +4,20 @@
  */
 package juego;
 
-
+/**
+ *
+ * @author DIEGO
+ */
 public class Fizzbuzz {
     public Fizzbuzz(){
-        for(int i=1;i<=100;i++){
-         if (i%3==0 && i%5==0){
-             System.out.println("FIZZBUZ");
-         }else if(i%5==0){
-             Fizz.imprimirfizz();
-         }else if(i%3==0){
-             Buzz.imprimirBuzz();
-         }else{
-             System.out.println(i);
-         }
+        
     }
+    
+    public static void imprimirfizz(){
+        System.out.println("Fizz");        
+    }
+    
+    public static void imprimirBuzz(){
+        System.out.println("Buzz");        
     }
 }

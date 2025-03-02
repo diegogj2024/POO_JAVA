@@ -7,7 +7,7 @@ package juego;
 public class Principal {
  
     public static void main(String[] args) {
-        Fizzbuzz obFizzbuzz=new Fizzbuzz();
+        Numeros objNumeros=new Numeros();
     }
     
 }
